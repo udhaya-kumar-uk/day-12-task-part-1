@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/practice/practice.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="class">
+        <div class="div1">  number of seats available: 23      </div>
+         <div class="new">  
+        <div class="div2">  <div class="image">
+            <div class="circle">image </div>
+        </div>    </div>
+         <div class="div3">
+            <lable style="display: block;padding: 10px;">name<input></lable> 
+            <lable style="display: block;padding: 10px;" type="number">email<input></lable> 
+            <lable style="display: block;padding: 10px;">phone number<input></lable> 
+            <lable style="display: block;padding: 10px;">number of seats<input type="number"></lable> 
+            <lable style="display: block;padding: 10px;">number of Attendee 2<input></lable> 
+            <button style="margin: 20px;">submit</button><button>cancel</button>
+        </div>
+         </div>
+        </section>
+        
+        <style>
+            .circle{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid;
+               text-align: center;
+               text-justify:center; 
+            }
+        
+            .image{
+                width: 300px;
+                height: 200px;
+                background: whitesmoke;
+                display: flex;
+                 align-items: center;
+                 text-align: center;
+                 justify-content: center; 
+            }
+            .new{
+                width: 100%;
+                height: 300px;
+                background:rebeccapurple ;
+                display: flex;flex-direction: row;
+            }
+            .div3{
+                width: 50%;
+                height:300px;
+                background:lawngreen;
+                text-align: center;
+                padding: 30px;
+            overflow: auto;
+                
+                
+            }
+            .div2{
+                width: 50%;
+                height: 300px;
+                background:gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                
+            
+            }
+            .div1{
+              width: 100%;
+              height: 100px;
+              background:bisque;
+              text-align: center;
+              font-size: x-large;
+            }
+            .class{
+                width: 100vw;
+                height: 300px;
+                 background: gray 
+            }
+        </style>
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
